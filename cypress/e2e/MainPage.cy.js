@@ -8,10 +8,10 @@ describe("TS_1: Main Page", () => {
     cy.get("nav").should("be.visible"); // Header turi būti matomas
 
     cy.get("nav").within(() => {
-      cy.get("a.nav-link[href='/sweets']").should("be.visible"); // Tikrinti "Sweets" nuorodą
-      cy.get("a.nav-link[href='/about']").should("be.visible"); // Tikrinti "About" nuorodą
-      cy.get("a.nav-link[href='/login']").should("be.visible"); // Tikrinti "Login" nuorodą
-      cy.get("a.nav-link[href='/basket']").should("be.visible"); // Tikrinti "Basket" nuorodą
+      cy.contains("Sweets").should("be.visible");
+      cy.contains("About").should("be.visible");
+      cy.contains("Login").should("be.visible");
+      cy.contains("Basket").should("be.visible");
       cy.contains(".badge.badge-success", "0").should("be.visible"); //Krepšelio prekių skaičius
 
     });

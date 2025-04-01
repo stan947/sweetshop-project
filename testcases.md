@@ -1,9 +1,10 @@
-1. TS_1 About Page
-    TC_1.1 Verify the page has the title 'Sweet Shop Project'.
-    TC_1.2 Verify the page has a description.
-    TC_1.3 Verify the page has a banner and it matches the year 2018.
+1. TS_1 Main Page
+    TC_1.1 Verify the header with all navigation links is visible
+    TC_1.2 Verify welcome text is visible.
+    TC_1.3 Verify 'Browse Sweets' button is visible and navigate correctly.
+    TC_1.4 Verify page display at least 4 popular sweets with correct info.
 
-2. TS_2 Header (navigation bar) 
+2. TS_2 Navigation tests
     TC_2.1 Verify that "Sweets" page loads from main page correctly.
     TC_2.2 Verify that "About" page loads from main page correctly.
     TC_2.3 Verify that "Login" page loads from main page correctly.

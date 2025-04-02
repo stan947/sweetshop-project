@@ -8,12 +8,12 @@ describe('TS_5 About Page', () => {
         cy.get('h1').should('have.text', 'Browse sweets');
     });
 
-    it("TC_5.2: Verify each product has a name, price, image and 'Add to Basket' button.", () => {
+    it("TC_5.2: Verify each product has a name, price, image,description and 'Add to Basket' button.", () => {
 
         cy.get(".card").each(($el) => {
 
             cy.wrap($el).within(() => {
-                
+
                 cy.get(".card-title").should("exist").and("be.visible").and("not.be.empty"); // Produkto pavadinimas
                 cy.get(".card-text").should("exist").and("be.visible").and("not.be.empty"); // Produkto aprašymas
                 cy.get(".text-muted").should("exist").and("be.visible").and("not.be.empty"); // Produkto kaina

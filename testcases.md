@@ -32,7 +32,7 @@
     TC_3.2 Verify the page has a description.
     TC_3.3 Verify the page contains 'email' and 'password' input fields.
     TC_3.4 Verify the page contains a 'Login' button.
-    TC_4.5 Verify links to Twitter, Facebook, Linkedin
+    TC_3.5 Verify links to Twitter, Facebook, Linkedin
     TC_3.6 Positive with valid data
     TC_3.7 Negative with wrong email format
     TC_3.8 Negative with empty email

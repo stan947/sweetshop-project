@@ -1,5 +1,5 @@
 describe("TS_1: Main Page", () => {
-  
+
   beforeEach(() => {
     cy.visit("/");
   });
@@ -18,7 +18,7 @@ describe("TS_1: Main Page", () => {
   });
 
   it("TC_1.2: Should display the main welcome text", () => {
-    cy.contains("Welcome to the sweet shop!").should("be.visible"); // Tikriname pagrindinį užrašą
+    cy.contains("Welcome to the sweet shop!").should("be.visible"); 
   });
 
   it("TC_1.3: Should display the 'Browse Sweets' button and navigate correctly", () => {

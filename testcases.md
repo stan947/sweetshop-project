@@ -46,8 +46,7 @@
 
 5. TS_5 Sweets Page
     TC_5.1 Verify the page title is 'Browse sweets'.
-    TC_5.2 Verify the list of available products is displayed.
-    TC_5.3 Verify each product has a name, price, image and 'Add to Basket' button.
+    TC_5.2 Verify each product has a name, price, image and 'Add to Basket' button.
 
 6. TS_6 Basket Page (Cart)
     TC_6.1 Add products to basket and the basket count is updated.

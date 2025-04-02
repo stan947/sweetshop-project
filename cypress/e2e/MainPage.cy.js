@@ -30,10 +30,10 @@ describe("TS_1: Main Page", () => {
     cy.get(".card")
       .should("have.length.at.least", 4)
       .each(($el) => {
-        cy.wrap($el).find(".card-title").should("be.visible"); // Pavadinimas
-        cy.wrap($el).find(".card-text").should("be.visible"); // Aprašymas
-        cy.wrap($el).find(".text-muted").should("be.visible"); // Kaina
-        cy.wrap($el).find(".addItem").should("be.visible"); // "Add to Basket" mygtukas
+        cy.wrap($el).find(".card-title").should("be.visible").and("not.be.empty"); // Pavadinimas
+        cy.wrap($el).find(".card-text").should("be.visible").and("not.be.empty"); // Aprašymas
+        cy.wrap($el).find(".text-muted").should("be.visible").and("not.be.empty"); // Kaina
+        cy.wrap($el).find(".addItem").should("be.visible").and("not.be.empty"); // "Add to Basket" mygtukas
       });
   });
 

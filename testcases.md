@@ -39,15 +39,17 @@
     TC_3.9 Negative with empty password
     TC_3.10 Negative with empty email and empty password
 
-4. TS_4 Account page
-    TC_4.1. Positive login.Verify user info is displayed.
+4. TS_4 About Page
+    TC_4.1 Verify the page has the title 'Sweet Shop Project'.
+    TC_4.2 Verify the page has a description.
+    TC_4.3 Verify the page has a banner and it matches the year 2018.
 
 5. TS_5 Sweets Page
     TC_5.1 Verify the page title is 'Browse sweets'.
     TC_5.2 Verify the list of available products is displayed.
     TC_5.3 Verify each product has a name, price, image and 'Add to Basket' button.
- 
- 6. TS_6 Basket Page (Cart)
+
+6. TS_6 Basket Page (Cart)
     TC_6.1 Add products to basket and the basket count is updated.
     TC_6.2 Add products to basket with delivery 'Collect(FREE)' (quantity, names, total).
     TC_6.3 Add products to basket with delivery 'Standard shipping (1.99)' (quantity, names, total).
@@ -56,16 +58,21 @@
     TC_6.5 Verify the basket count is updated.
     TC_6.6 Empty basket.
     TC_6.7 Verify the basket is empty.
- 
-6. Checkout Process
+
+7. TS_ Account page
+    TC_7.1. Positive login.Verify user info is displayed.
+
+
+
+8. Checkout Process
    
-    TS_5.1  Checkout Page Load:
+    TS_8.1  Checkout Page Load:
      
-      TC_5.1.1 Verify the checkout page is accessible.
-      TC_5.1.2 Verify the page displays all basket items.
+      TC_8.1.1 Verify the checkout page is accessible.
+      TC_8.1.2 Verify the page displays all basket items.
  
     TS_5.2  Completing Checkout:
  
-      TC_5.2.1 Enter valid payment and shipping details.
-      TC_5.2.2 Add shipping costs.
-      TC_5.2.3 Verify checkout was successful.
+      TC_8.2.1 Enter valid payment and shipping details.
+      TC_8.2.2 Add shipping costs.
+      TC_8.2.3 Verify checkout was successful.

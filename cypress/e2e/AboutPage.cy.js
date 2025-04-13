@@ -9,7 +9,10 @@ describe('TS_4 About Page', () => {
     });
     
     it('TC_1.2 Verify the page has a description', () => {
-        cy.get('p.lead').each(($el) => {
+
+        const pageDescription = "p.lead";
+
+        cy.get(pageDescription ).each(($el) => {
             cy.wrap($el)
                 .should('be.visible')
                 .and('not.be.empty');
@@ -17,7 +20,10 @@ describe('TS_4 About Page', () => {
     });
 
     it('TC_4.3 Verify the page has a banner and it matches the year 2018', () => {
-        cy.get('p.m-0.text-center')
+        
+        const bannerText = "p.m-0.text-center";
+
+        cy.get(bannerText)
             .should('be.visible')
             .and('not.be.empty')
             .and('include.text', 'Sweet Shop Project 2018');

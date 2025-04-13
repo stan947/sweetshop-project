@@ -12,17 +12,23 @@ describe('TS_5 About Page', () => {
 
         cy.get(".card").each(($el) => {
 
+            const productName = ".card-title";
+            const productDescription = ".card-text";
+            const productPrice = ".text-muted";
+            const productImage = ".card-img-top";
+            const addToBasketButton = ".addItem"
+
             cy.wrap($el).within(() => {
 
-                cy.get(".card-title").should("exist").and("be.visible").and("not.be.empty"); // Produkto pavadinimas
-                cy.get(".card-text").should("exist").and("be.visible").and("not.be.empty"); // Produkto aprašymas
-                cy.get(".text-muted").should("exist").and("be.visible").and("not.be.empty"); // Produkto kaina
-                cy.get(".addItem").should("exist").and("be.visible").and("not.be.empty"); // "Add to Basket" mygtukas
-                cy.get(".card-img-top")
+                cy.get(productName).should("exist").and("be.visible").and("not.be.empty"); 
+                cy.get(productDescription).should("exist").and("be.visible").and("not.be.empty"); 
+                cy.get(productPrice).should("exist").and("be.visible").and("not.be.empty"); 
+                cy.get(addToBasketButton).should("exist").and("be.visible").and("not.be.empty"); 
+                cy.get(productImage)
                     .should("exist")
                     .and("be.visible")
                     .and(($img) => {
-                        expect($img[0].naturalWidth).to.be.greaterThan(0); // Užtikrina, kad paveikslėlis nėra sugadintas
+                        expect($img[0].naturalWidth).to.be.greaterThan(0);
                     });
             });
         });

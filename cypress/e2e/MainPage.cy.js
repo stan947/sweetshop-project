@@ -5,14 +5,19 @@ describe("TS_1: Main Page", () => {
   });
 
   it("TC_1.1: Should display the header with all navigation links", () => {
-    cy.get("nav").should("be.visible"); // Header turi būti matomas
+
+    const basketCount = ".badge.badge-success";
+
+    cy.get("nav").should("be.visible"); 
 
     cy.get("nav").within(() => {
+
+
       cy.contains("Sweets").should("be.visible");
       cy.contains("About").should("be.visible");
       cy.contains("Login").should("be.visible");
       cy.contains("Basket").should("be.visible");
-      cy.contains(".badge.badge-success", "0").should("be.visible"); //Krepšelio prekių skaičius
+      cy.contains(basketCount, "0").should("be.visible"); 
 
     });
   });
@@ -27,13 +32,26 @@ describe("TS_1: Main Page", () => {
   });
 
   it("TC_1.4: Should display at least 4 popular sweets with correct info", () => {
+
+    const productName = ".card-title";
+    const productDescription = ".card-text";
+    const productPrice = ".text-muted";
+    const addToBasketButton = ".addItem";
+    const productImage = ".card-img-top";
+    
     cy.get(".card")
       .should("have.length.at.least", 4)
       .each(($el) => {
-        cy.wrap($el).find(".card-title").should("be.visible").and("not.be.empty"); // Pavadinimas
-        cy.wrap($el).find(".card-text").should("be.visible").and("not.be.empty"); // Aprašymas
-        cy.wrap($el).find(".text-muted").should("be.visible").and("not.be.empty"); // Kaina
-        cy.wrap($el).find(".addItem").should("be.visible").and("not.be.empty"); // "Add to Basket" mygtukas
+        cy.wrap($el).find(productName ).should("be.visible").and("not.be.empty"); 
+        cy.wrap($el).find(productDescription).should("be.visible").and("not.be.empty"); 
+        cy.wrap($el).find(productPrice).should("be.visible").and("not.be.empty"); 
+        cy.wrap($el).find(addToBasketButton).should("be.visible").and("not.be.empty"); 
+        cy.get(productImage)
+        .should("exist")
+        .and("be.visible")
+        .and(($img) => {
+            expect($img[0].naturalWidth, "Image should be loaded").to.be.greaterThan(0)
+          });
       });
   });
 

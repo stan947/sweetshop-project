@@ -1,4 +1,4 @@
-describe('TS_5 About Page', () => {
+describe('TS_5 Sweets Page', () => {
 
     beforeEach(() => {
         cy.visit('/sweets');
@@ -10,13 +10,13 @@ describe('TS_5 About Page', () => {
 
     it("TC_5.2: Verify each product has a name, price, image,description and 'Add to Basket' button.", () => {
 
-        cy.get(".card").each(($el) => {
+        const productName = ".card-title";
+        const productDescription = ".card-text";
+        const productPrice = ".text-muted";
+        const productImage = ".card-img-top";
+        const addToBasketButton = ".addItem"
 
-            const productName = ".card-title";
-            const productDescription = ".card-text";
-            const productPrice = ".text-muted";
-            const productImage = ".card-img-top";
-            const addToBasketButton = ".addItem"
+        cy.get(".card").each(($el) => {
 
             cy.wrap($el).within(() => {
 

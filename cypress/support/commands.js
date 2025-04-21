@@ -11,6 +11,12 @@ Cypress.Commands.add("fillBasketWithProducts", (numOfProducts = 4) => {
             .eq(randomIndex) 
             .click(); 
 
-        cy.wait(1000); 
+ 
     }
+});
+
+Cypress.Commands.add('login', (email = 'testd@user.com', password = 'ValidPassword123') => {
+    cy.get('input[type="email"]').type(email);
+    cy.get('input[type="password"]').type(password);
+    cy.get('button[type="submit"]').click();
 });

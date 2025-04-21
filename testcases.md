@@ -51,20 +51,19 @@
 
 ## 6. TS_6 Add to Basket Functionality
 - **TC_6.1** Should add random product from Main page to basket and verify
-- **TC_6.2** Should add random product from sweets page to basket and verify
+- **TC_6.2** Should add random product from Sweets page to basket and verify
 
 
-## 6. TS_7 Basket Page (Cart)
-- **TC_6.1** Add products to basket and the basket count is updated  
-- **TC_6.2** Add products to basket with delivery 'Collect (FREE)' (quantity, names, total)  
-- **TC_6.3** Add products to basket with delivery 'Standard shipping (1.99)' (quantity, names, total)  
-- **TC_6.4** Remove item from basket  
-- **TC_6.5** Verify the basket count is updated  
-- **TC_6.6** Empty basket  
-- **TC_6.7** Verify the basket is empty  
+## 7. TS_7 Basket Page (Cart)
+- **TC_7.1** Should show correct product details, count in basket and total price
+- **TC_7.2** Should correctly apply £0.00 for Collect (Free) delivery
+- **TC_7.3** Should correctly apply £1.99 delivery 'Standard shipping (1.99)
+- **TC_7.4** Remove item from basket and verify the basket count and total price is updated  
+- **TC_7.5** Empty basket and  verify the basket is empty
+- **TC_7.6** Verify return to basket when when clicking "Cancel" on confirm dialog
 
 ## 7. TS_7 Account Page
-- **TC_7.1** Positive login. Verify user info is displayed  
+- **TC_7.1** Positive login to Acount page 
 
 ## 8. TS_8 Checkout Process
 

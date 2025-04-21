@@ -25,10 +25,12 @@ describe('Login Page Tests', () => {
 
     it('TC_3.5: Verify links to Twitter, Facebook, LinkedIn', () => {
 
-        cy.get('a[href="#"] img[alt="twitter"]').should('be.visible');
-        cy.get('a[href="#"] img[alt="facebook"]').should('be.visible');
-        cy.get('a[href="#"] img[alt="linkedin"]').should('be.visible');
-
+        cy.get('a[href="#"] img[alt="twitter"]').should('be.visible').click();
+        cy.url().should("include", "twitter.com");
+        cy.get('a[href="#"] img[alt="facebook"]').should('be.visible').click();
+        cy.url().should("include", "facebook.com");
+        cy.get('a[href="#"] img[alt="linkedin"]').should('be.visible').click();
+        cy.url().should("include", "linkedin.com");
     });
 
     it('TC_3.6: Positive test with valid data', () => {

@@ -9,7 +9,7 @@ You can view application here:  https://sweetshop.netlify.app/
 * The project provides automated Cypress tests that verify the functionality 
 of the web application **SweetShop** pages.
 
-* All   **7 Test Scenarios** and **49 Test Cases** are described in the [testcases.md](testcases.md) file
+* All   **9 Test Scenarios** and **49 Test Cases** are described in the [testcases.md](testcases.md) file
 
 * This project uses a **GitHub Actions** CI pipeline that automatically runs **Cypress** tests
 

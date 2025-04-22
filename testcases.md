@@ -62,16 +62,16 @@
 - **TC_7.5** Empty basket and  verify the basket is empty
 - **TC_7.6** Verify return to basket when when clicking "Cancel" on confirm dialog
 
-## 7. TS_7 Account Page
-- **TC_7.1** Positive login to Acount page 
+## 8. TS_8 Account Page
+- **TC_8.1** Positive login to Acount page 
 
-## 8. TS_8 Checkout Process
+## 9. TS_9 Checkout Process
 
-### TS_8.1 Checkout Page Load
+### TS_9.1 Checkout Page Load
 - **TC_8.1.1** Verify the checkout page is accessible  
 - **TC_8.1.2** Verify the page displays all basket items  
 
-### TS_8.2 Completing Checkout
+### TS_9.2 Completing Checkout
 - **TC_8.2.1** Enter valid payment and shipping details  
 - **TC_8.2.2** Add shipping costs  
 - **TC_8.2.3** Verify checkout was successful 
